@@ -3,65 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
+  <title>Portfólio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="reveal.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-  <div class="container">
-    <header>
+
+  <header>
+      <nav>
+        <a class="logo" href="#">Higor Amorim</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <ul class="nav-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+  </header>
+
+
+  <main>
+    <section class="hero" id="hero">
+      <section class="hero-text">
       <h1>Higor Amorim</h1>
       <p>Desenvolvedor Full-Stack | Python | PHP | SQL | C</p>
-    </header>
-
-    <section id="sobre">
-      <h2>Sobre mim</h2>
-      <p>Estudante de Análise e Desenvolvimento de Sistemas com base técnica sólida em TI, programação e banco de dados. Possuo experiência prática com linguagens de programação C Python e PHP, além de conhecimentos em banco de dados.</p>
-    </section>
-
-    <section id="linguagens">
-        <h2>Linguagens</h2>
-        <div class="linguagens">
-          <div class="ling-card">
-            <h3>Python</h3>
-            <p></p>
-          </div>
-          <div class="ling-card">
-            <h3>C</h3>
-            <p></p>
-          </div>
-          <div class="ling-card">
-            <h3>PHP</h3>
-            <p></p>
-          </div>
-          <!-- Adicione mais projetos -->
-        </div>
+      <a href="#contact" class="btn"><i class="bi bi-telephone-fill"></i> Entre em Contato</a>
       </section>
+  
+      <img src="higor.png" alt="Imagem de Higor Amorim" class="hero-image">
+    </section>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3>Em Desenvolvimento</h3>
-          <p></p>
+
+    <section class="sobre" id="sobre">
+      <section class="sobre-text">
+        <h2><i class="bi bi-person-fill"></i> Sobre</h2>
+        <p>Me chamo Higor Amorim, amo a tecnologia e o desenvolvimento de novas ferramentas. Escolhi a programação como carreira após ter experimentado a programação de micro controladores em linguagem C. Em 2024 iniciei meus estudos em Análise e desenvolvimento de sistemas e foquei meus estudos para o desenvolvimento web.
+        Tenho conhecimento em HTML, CSS, Python, C, PHP e JavaScript. Busco aprender tudo que estiver ao meu alcance para me tornar um melhor profissional a cada dia</p>
+
+        <a href="/" class="btn"><i class="bi bi-file-earmark-arrow-down-fill"></i> Baixar currículo</a>
+      </section>
+      <img src="draw.svg" alt="https://storyset.com/illustration/website-creator/bro/animate" class="sobre-image">
+    </section>
+
+    <section class="skills" id="skills">
+      <h2><i class="bi bi-code-slash"></i> Habilidades</h2>
+      <p>Conhecimento em diversas linguagens de programação e tecnologias web.</p>
+      <div class="boxes">
+        
+        <div class="skill-box">
+          <i class="bi bi-filetype-html"></i>
+          <h3>HTML</h3>
+          <p>Estruturação de páginas web</p>
         </div>
-        <div class="project-card">
-          <h3>Em Desenvolvimento</h3>
-          <p></p>
+
+        <div class="skill-box">
+          <i class="bi bi-css"></i>
+          <h3>CSS</h3>
+          <p>Estilização e design responsivo</p>
         </div>
-        <!-- Adicionar mais projetos -->
+
+        <div class="skill-box">
+          <i class="bi bi-filetype-js"></i>
+          <h3>JavaScript</h3>
+          <p>Interatividade e dinamicidade</p>
+        </div>
+
+        <div class="skill-box">
+          <i class="bi bi-filetype-py"></i>
+          <h3>Python</h3>
+          <p>Desenvolvimento de aplicações</p>
+        </div>
+
+        <div class="skill-box">
+          <i class="bi bi-filetype-php"></i>
+          <h3>PHP</h3>
+          <p>Desenvolvimento de back-end</p>
+        </div>
+
+        <div class="skill-box">
+          <i class="bi bi-c-square-fill"></i>
+          <h3>C</h3>
+          <p>Programação de micro controladores</p>
+        </div>
+
       </div>
+
+    <section class="projects" id="projects">
+      <h2><i class="bi bi-clipboard-check-fill"></i>
+        Projetos</h2>
+      <p>Alguns dos meus projetos mais recentes, desenvolvidos com dedicação e criatividade.</p>
+
+      <div class="boxes">
+        
+        <div class="project-box">
+          <i class="bi bi-display"></i>
+          <h3>Landing page responsiva</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+
+        <div class="project-box">
+          <i class="bi bi-calculator"></i>
+          <h3>Calculadora</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+
+        <div class="project-box">
+          <i class="bi bi-diagram-3"></i>
+          <h3>API</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        
+      </div>
+
+      <a href="" class="btn">Ver mais projetos</a>
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Email: higor.amtx@gmail.com</p>
-      <p><a href="www.linkedin.com/in/higor-amtx" target="_blank">LinkedIn</a></p>
-      <p><a href="https://github.com/HigorAmTx" target="_blank">GitHub</a></p>
+    
+    <section class="contact" id="contact">
+      <img src="contact-draw.png" alt="https://storyset.com/illustration/mention/bro" class="contact-image">
+      
+      <section class="contact-text">
+      <h2><i class="bi bi-person-lines-fill"></i> Contatos</h2>
+      <p><i class="bi bi-envelope-fill"></i> o.amorim.higor@gmail.com</p>
+      <p><i class="bi bi-telephone-fill"></i> Telefone: (11) 97633-1247</p>
+      <p><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/higor-amtx"> LinkedIn: Higor Amorim</a></p>
+      <p><i class="bi bi-github"></i><a href="https://github.com/HigorAmTx"> GitHub: HigorAmTx</a></p>
+    </section>
     </section>
 
-    <footer>
-      &copy; 2025 Higor Amorim. Todos os direitos reservados.
-    </footer>
-  </div>
+    <section class="footer">
+      <p>&copy; 2025 Higor Amorim. Todos os direitos reservados.</p>
+      <a href="#" class="btn"><i class="bi bi-chevron-bar-up"></i> Voltar ao topo</a>
+    </section>
+
+  </main>
+
+
+  <script src="mobile-navbar.js"></script>
+
 </body>
 </html>
